@@ -12,6 +12,7 @@ public class ShuffledDeck : MonoBehaviour
     // Assign these in the Inspector
     public Button shuffleButton;
     public Button drawButton;
+    [SerializeField] private Cards _cardsScript;
 
     // state
     private bool isShuffled = false;
@@ -33,7 +34,10 @@ public class ShuffledDeck : MonoBehaviour
             shuffleButton.onClick.RemoveListener(ShuffleOnce);
 
         if (drawButton != null)
+        {
             drawButton.onClick.RemoveListener(OnDrawButtonPressed);
+            
+        }
     }
 
     // Rebuilds the deck to [0 .. listRange-1]
@@ -82,6 +86,7 @@ public class ShuffledDeck : MonoBehaviour
 
         int lastIndex = shuffleList.Count - 1;
         int card = shuffleList[lastIndex];
+        _cardsScript.CardList.Add(card); // add card to player's hand
         shuffleList.RemoveAt(lastIndex); // remove so it can't be drawn again
         return card;
     }
