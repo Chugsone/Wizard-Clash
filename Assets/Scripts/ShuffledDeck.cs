@@ -85,9 +85,6 @@ public class ShuffledDeck : MonoBehaviour
         shuffleList.RemoveAt(lastIndex); // remove so it can't be drawn again
         return card;
     }
-
-    // UI button callback - draws a card but does NOT reveal it to the player.
-    // If you want to reveal, change the behavior here (e.g. show a face sprite).
     private void OnDrawButtonPressed()
     {
         int card = DrawNextCard();
@@ -97,8 +94,7 @@ public class ShuffledDeck : MonoBehaviour
             return;
         }
 
-        // Keep the card hidden from the player: do not display `card`.
-        // For debugging you can log it; remove the log to keep it secret.
+        // hides card that was taken from deck
         Debug.Log($"Drew card id {card} (hidden to player). Cards remaining: {shuffleList.Count}");
 
        
