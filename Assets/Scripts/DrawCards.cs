@@ -9,15 +9,29 @@ public class DrawCards : MonoBehaviour
     public GameObject Card3;
     public GameObject Player;
 
+    // maximum number of cards allowed in hand
+    public int maxHandSize = 3;
+
     public void OnClick()
     {
-        for (int i = 0; i < 1; i++)
+        if (Player == null)
         {
-            GameObject card = Instantiate(Card1, new Vector2(0,0), Quaternion.identity);
-            card.transform.SetParent(Player.transform, false);
+            Debug.LogWarning("Player (hand parent) is not assigned.");
+            return;
         }
-    }
 
+       
+        int currentHandCount = Player.transform.childCount;
+        if (currentHandCount >= maxHandSize)
+        {
+            Debug.Log("Hand is full. Cannot draw more cards.");
+            return;
+        }
+
+  
+        GameObject card = Instantiate(Card1, Vector2.zero, Quaternion.identity);
+        card.transform.SetParent(Player.transform, false);
+    }
 
     void Start()
     {
