@@ -1447,6 +1447,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2389688638528161524, guid: 8c668f5506c946d4e989521d14767e3b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389688638528161524, guid: 8c668f5506c946d4e989521d14767e3b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2389688638528161524, guid: 8c668f5506c946d4e989521d14767e3b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3619154940177140850, guid: 8c668f5506c946d4e989521d14767e3b, type: 3}
       propertyPath: m_text
       value: 'shuffle deck
