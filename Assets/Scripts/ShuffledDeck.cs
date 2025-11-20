@@ -86,7 +86,7 @@ public class ShuffledDeck : MonoBehaviour
 
         int lastIndex = shuffleList.Count - 1;
         int card = shuffleList[lastIndex];
-        _cardsScript.CardList.Add(card); // add card to player's hand
+       // _cardsScript.CardList.Add(card); // add card to player's hand
         shuffleList.RemoveAt(lastIndex); // remove so it can't be drawn again
         return card;
     }
