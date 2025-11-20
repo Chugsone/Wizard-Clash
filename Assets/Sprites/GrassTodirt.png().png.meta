@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GrassTodirt.png()_0: 9026158743634352775
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
