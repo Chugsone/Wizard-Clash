@@ -140,7 +140,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6474922827000650286}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8696105555217883531}
+        m_TargetAssemblyTypeName: DrawCards, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8696105555217883531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +168,7 @@ MonoBehaviour:
   Card1: {fileID: 7523924104315412543, guid: 02b869d6dcd3fec469b2b42b53834fc9, type: 3}
   Card2: {fileID: 2878324992723991429, guid: 035ab6feaebea014f8bb8edf2a07e761, type: 3}
   Card3: {fileID: 0}
-  PlayerArea: {fileID: 1198644579022298083, guid: 6cc977b7d31feba4d9f9876094361b18, type: 3}
+  Player: {fileID: 1198644579022298083, guid: 6cc977b7d31feba4d9f9876094361b18, type: 3}
 --- !u!1 &5979693546112807810
 GameObject:
   m_ObjectHideFlags: 0
