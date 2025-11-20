@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8119983950568833}
+  - component: {fileID: 1297985942894018108}
   - component: {fileID: 9076719741794074248}
   - component: {fileID: 6474922827000650286}
   - component: {fileID: 2389688638528161524}
+  - component: {fileID: 8696105555217883531}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -39,6 +41,24 @@ RectTransform:
   m_AnchoredPosition: {x: 830, y: 7.4899}
   m_SizeDelta: {x: 200.4, y: 173.49}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1297985942894018108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619550868838852789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3214f271d51b7d543bdeb9b3a97ff89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shuffleList: 0100000002000000030000000400000005000000060000000700000008000000090000000b0000000a0000000c0000000d0000000f0000000e000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f00000030000000310000003200000033000000
+  listRange: 52
+  shuffleTimes: 1
+  shuffleButton: {fileID: 2389688638528161524}
+  drawButton: {fileID: 2389688638528161524}
+  _cardsScript: {fileID: 0}
 --- !u!222 &9076719741794074248
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -120,7 +140,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6474922827000650286}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8696105555217883531}
+        m_TargetAssemblyTypeName: DrawCards, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8696105555217883531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619550868838852789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b759ba6c9cfefd94587172921c360945, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Card1: {fileID: 7523924104315412543, guid: 02b869d6dcd3fec469b2b42b53834fc9, type: 3}
+  Card2: {fileID: 2878324992723991429, guid: 035ab6feaebea014f8bb8edf2a07e761, type: 3}
+  Card3: {fileID: 0}
+  Player: {fileID: 1198644579022298083, guid: 6cc977b7d31feba4d9f9876094361b18, type: 3}
 --- !u!1 &5979693546112807810
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,7 +234,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'shuffle deck
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

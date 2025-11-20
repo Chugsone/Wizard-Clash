@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d41024f2ed05f6e418ef3bfad1fa179c
+guid: 39f4ce3e8618e0f429889497fe8408d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -400362159298979892
-    second: GrassToDirt.png))_0
+      213: 1856567207279646495
+    second: BrickWall_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GrassToDirt.png))_0
+      name: BrickWall_0
       rect:
         serializedVersion: 2
         x: 25
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc7d971ccb0a17af0800000000000000
-      internalID: -400362159298979892
+      spriteID: f17da8bd90ad3c910800000000000000
+      internalID: 1856567207279646495
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GrassToDirt.png))_0: -400362159298979892
+      BrickWall_0: 1856567207279646495
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -10,7 +10,6 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
 
     public Transform parentAfterDrag;
     private Vector2 originalPosition;
-  
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -28,6 +27,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         Debug.Log("OnDrag");
         
         transform.position = Input.mousePosition;
+
     }
     public void OnEndDrag(PointerEventData eventData)
     {
@@ -36,4 +36,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         currentDraggedItem = null; 
         GetComponent<Image>().raycastTarget = true;
     }
+
+
+
 }
