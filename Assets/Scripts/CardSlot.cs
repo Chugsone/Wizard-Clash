@@ -1,14 +1,15 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class CardSlot : MonoBehaviour
+[RequireComponent(typeof(HorizontalLayoutGroup))]
+public class CardSlot : MonoBehaviour, IPointerEnterHandler
 {
-    private void OnMouseEnter()
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        DragDrop.currentDraggedItem.parentAfterDrag = this.transform;
-    }
+        Debug.Log("OnMouseEnter");
 
-    private void OnMouseExit()
-    {
-        DragDrop.currentDraggedItem.parentAfterDrag = null;
+        if (DragDrop.currentDraggedItem != null)
+            DragDrop.currentDraggedItem.parentAfterDrag = this.transform;
     }
 }

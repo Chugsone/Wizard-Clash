@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
@@ -18,6 +19,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         parentAfterDrag = this.transform.parent;
         this.transform.SetParent(this.transform.root);
         transform.SetAsLastSibling();
+        GetComponent<Image>().raycastTarget = false;
 
         currentDraggedItem = this;
     }
@@ -30,8 +32,8 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     public void OnEndDrag(PointerEventData eventData)
     {
         Debug.Log("OnEndDrag");
-        transform.position = originalPosition;
         this.transform.SetParent(parentAfterDrag);
-        currentDraggedItem = null;
+        currentDraggedItem = null; 
+        GetComponent<Image>().raycastTarget = true;
     }
 }
