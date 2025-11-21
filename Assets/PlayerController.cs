@@ -6,6 +6,13 @@ namespace Assets
 {
     public class PlayerController : MonoBehaviour
     {
+        public string FrameDebugger;
+
+        public PlayerController(string frameDebugger)
+        {
+            FrameDebugger = frameDebugger;
+        }
+
         public float moveSpeed = 5f;
         public Transform movePoint;
 
