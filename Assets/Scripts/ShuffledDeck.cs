@@ -12,7 +12,7 @@ public class ShuffledDeck : MonoBehaviour
     // Assign these in the Inspector
     public Button shuffleButton;
     public Button drawButton;
-    [SerializeField] private Cards _cardsScript;
+    //[SerializeField] private Cards _cardsScript;
 
     // state
     private bool isShuffled = false;
