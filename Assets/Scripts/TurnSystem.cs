@@ -10,18 +10,25 @@ public class TurnSystem : MonoBehaviour
     public int isOpponentTurn;
     public Text turnText;
 
+<<<<<<< HEAD
     public static bool startTurn;
 
 
+=======
+    
+>>>>>>> bf9bb58a0fdd549ba0658978099abec189e1f0e0
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         isYourTurn = true;
         yourTurn = 1;
         isOpponentTurn = 0;
+<<<<<<< HEAD
 
         startTurn = false;
 
+=======
+>>>>>>> bf9bb58a0fdd549ba0658978099abec189e1f0e0
     }
 
     // Update is called once per frame
@@ -47,8 +54,11 @@ public class TurnSystem : MonoBehaviour
     {
         isYourTurn = true;
         yourTurn += 1;
+<<<<<<< HEAD
 
         startTurn = true;
+=======
+>>>>>>> bf9bb58a0fdd549ba0658978099abec189e1f0e0
     }
 
 }
