@@ -2,30 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+namespace Assets
 {
-    public float moveSpeed = 5f;
-    public Transform movePoint;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class PlayerController : MonoBehaviour
     {
-        movePoint.parent = null;
-    }
+        public float moveSpeed = 5f;
+        public Transform movePoint;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
         {
-            movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
-
-        }
-        
-        if(Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
-        {
-            movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+            movePoint.parent = null;
         }
 
+        // Update is called once per frame
+        void Update()
+        {
+            if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
+            {
+                movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+
+            }
+
+            if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
+            {
+                movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+            }
+
+        }
     }
 }
