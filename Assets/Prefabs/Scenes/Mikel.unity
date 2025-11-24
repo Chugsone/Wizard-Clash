@@ -1805,6 +1805,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4346181280385523626, guid: 6cc977b7d31feba4d9f9876094361b18, type: 3}
+      propertyPath: m_Name
+      value: Water
+      objectReference: {fileID: 0}
     - target: {fileID: 4486231991103427836, guid: 6cc977b7d31feba4d9f9876094361b18, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1820,6 +1824,14 @@ PrefabInstance:
     - target: {fileID: 4486231991103427836, guid: 6cc977b7d31feba4d9f9876094361b18, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5398624227015253723, guid: 6cc977b7d31feba4d9f9876094361b18, type: 3}
+      propertyPath: m_Name
+      value: Earth
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758072441773167715, guid: 6cc977b7d31feba4d9f9876094361b18, type: 3}
+      propertyPath: m_Name
+      value: Fire
       objectReference: {fileID: 0}
     - target: {fileID: 7741743384344200998, guid: 6cc977b7d31feba4d9f9876094361b18, type: 3}
       propertyPath: m_AnchorMax.y
