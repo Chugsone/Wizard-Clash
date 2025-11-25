@@ -26,11 +26,11 @@ public class Manager : MonoBehaviour
                         break;
 
                     case "Fire":
-                        resultText.text = "You Lose!";
+                        resultText.text = "You Win!";
                         break;
 
                     case "Water":
-                        resultText.text = "You Win!";
+                        resultText.text = "You Lose!";
                         break;
                 }
                 AIChoice.sprite = Earth;
