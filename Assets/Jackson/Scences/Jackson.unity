@@ -1823,8 +1823,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 272648503}
   lines:
-  - hello and welcome wizerds to the long awated and highly intisapated wizerd clash
-  - 'and now let the games begin '
+  - hello and welcome wizards to the long awaited and highly intisapated wizard clash
+  - and now let the games begin!
   textSpeed: 0.1
 --- !u!114 &951485337
 MonoBehaviour:
