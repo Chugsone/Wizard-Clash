@@ -193,7 +193,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0628, y: 1.3583, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -234,8 +234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -621.74, y: -269}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -600.49066, y: -171.91351}
+  m_SizeDelta: {x: 106.282, y: 135.8253}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &100462189
 MonoBehaviour:
@@ -283,7 +283,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1788545914}
         m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: PlayString
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -343,9 +343,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57bc6465542ea784ca1eb7512f3a4bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 0
-  name: 
-  description: 
 --- !u!1 &845307538
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,8 +378,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 639.74, y: -269}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 740.23486, y: -171.91351}
+  m_SizeDelta: {x: 106.282, y: 135.8253}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &845307540
 MonoBehaviour:
@@ -430,7 +427,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1788545914}
         m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: PlayString
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -512,8 +509,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 82, y: 214}
-  m_SizeDelta: {x: 275.3315, y: 57.2602}
+  m_AnchoredPosition: {x: 147.45789, y: 484.12256}
+  m_SizeDelta: {x: 292.6277, y: 77.7738}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &915421382
 CanvasRenderer:
@@ -594,8 +591,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.937, y: -269}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 79.37047, y: -171.91351}
+  m_SizeDelta: {x: 106.282, y: 135.8253}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &932113776
 MonoBehaviour:
@@ -643,7 +640,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1788545914}
         m_TargetAssemblyTypeName: Manager, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: PlayString
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -702,6 +699,7 @@ GameObject:
   - component: {fileID: 1105475617}
   - component: {fileID: 1105475616}
   - component: {fileID: 1105475615}
+  - component: {fileID: 1105475618}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -778,11 +776,55 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0628, y: 1.3583, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1105475618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1105475614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &1743667055
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,10 +962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resultText: {fileID: 915421383}
   AIChoice: {fileID: 2068825282}
-  Choices:
-  - Water
-  - Fire
-  - Earth
+  Choices: 000000000100000002000000
   Fire: {fileID: 1098286324429101383, guid: 362858e6363469f499d4d6f4b5dcee74, type: 3}
   Water: {fileID: 8509550459451208454, guid: 72596cd71c8cb2642be5977f52a6b027, type: 3}
   Earth: {fileID: 6423806749927177598, guid: 9812a06bcc5d1d8498d59803d2608a18, type: 3}
@@ -1014,8 +1053,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.937012, y: 50}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 79.37048, y: 261.36914}
+  m_SizeDelta: {x: 106.282, y: 135.8253}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
