@@ -51,10 +51,10 @@ public class Manager : MonoBehaviour
             case Choice.Water:
                 switch (myChoice)
                 {
-                    case Choice.Earth:
+                    case Choice.Fire:
                         resultText.text = "You Lose!";
                         break;
-                    case Choice.Fire:
+                    case Choice.Earth:
                         resultText.text = "You Win!";
                         break;
                     case Choice.Water:
@@ -67,13 +67,13 @@ public class Manager : MonoBehaviour
             case Choice.Fire:
                 switch (myChoice)
                 {
-                    case Choice.Earth:
+                    case Choice.Water:
                         resultText.text = "You Win!";
                         break;
                     case Choice.Fire:
                         resultText.text = "Draw!";
                         break;
-                    case Choice.Water:
+                    case Choice.Earth:
                         resultText.text = "You Lose!";
                         break;
                 }
