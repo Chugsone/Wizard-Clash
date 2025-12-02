@@ -1,0 +1,35 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+
+public class ThisCard : MonoBehaviour
+{
+    public List<Card> thisCard = new List<Card>();
+    public int thisId;
+
+    public int id;
+    public string cardName;
+    public string cardDescription;
+
+    public Text nameText;
+    public Text descriptionText;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        thisCard [0] = CardDatabase.cardList[thisId];
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        id =thisCard[0].id;
+        cardName = thisCard[0].cardName;
+        cardDescription = thisCard[0].description;
+
+        nameText.text = ""+cardName;
+        descriptionText.text = ""+cardDescription;
+    }
+}

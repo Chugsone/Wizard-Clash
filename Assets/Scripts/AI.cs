@@ -8,7 +8,6 @@ public class AI : MonoBehaviour
     public List<Card> deck = new List<Card>();
     public List<Card> container = new List<Card>();
     public static List<Card> staticEnemyDeck = new List<Card>();
-
     
     public GameObject DropZone;
     public GameObject Hand;
@@ -44,7 +43,7 @@ public class AI : MonoBehaviour
         for (int i = 0; i < deckSize; i++)
         {
             x = Random.Range(1, 7);
-            deck[i] = Manager.cardList[x];
+            deck[i] = CardDatabase.cardList[x];
         }
 
     }

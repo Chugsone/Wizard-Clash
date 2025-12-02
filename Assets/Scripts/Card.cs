@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Card : MonoBehaviour
 {
+    public int id;
     public string cardName;
     public string description;
 
@@ -15,9 +16,10 @@ public class Card : MonoBehaviour
         description = "This is a default card description.";
     }
 
-    public Card(string name, string desc)
+    public Card(int Id, string CardName, string Description)
     {
-        cardName = name;
-        description = desc;
+        id = Id;
+        this.cardName = CardName;
+        this.description = Description;
     }
 }

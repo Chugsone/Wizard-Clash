@@ -1153,7 +1153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5522641454248513117, guid: 3673301b10f39964fa9012359ea746ad, type: 3}
       propertyPath: m_Name
-      value: DropZone (1)
+      value: Zone
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -1767,7 +1767,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5522641454248513117, guid: 3673301b10f39964fa9012359ea746ad, type: 3}
       propertyPath: m_Name
-      value: DropZone
+      value: EnemyDropZone
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5153437681280836422, guid: 3673301b10f39964fa9012359ea746ad, type: 3}
@@ -1946,7 +1946,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1198644579022298083, guid: 6cc977b7d31feba4d9f9876094361b18, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Hand
       objectReference: {fileID: 0}
     - target: {fileID: 2126704040290226379, guid: 6cc977b7d31feba4d9f9876094361b18, type: 3}
       propertyPath: m_Sprite
@@ -2251,7 +2251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6240030786948966291, guid: d1a72408eb887cf4ea2a3e44b47bd9ec, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: EnemyHandZone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
