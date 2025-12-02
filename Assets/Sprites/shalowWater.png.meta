@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shalowWater_0: -6667628561456957169
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
