@@ -8,12 +8,12 @@ public class MainMenu : MonoBehaviour
 {
     public void OnStartClick()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Deklin");
+        
     }
 
     public void OnQuitClick()
     {
-        Debug.Log("Quitting game...");
-        Application.Quit();
+        SceneManager.LoadScene("Deklin");
     }
 }
