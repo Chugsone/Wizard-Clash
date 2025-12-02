@@ -41,7 +41,7 @@ public class PauseMenu : MonoBehaviour
 
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Henry");
+        SceneManager.LoadScene("Pause");
     }
 
     public void QuitGame()
