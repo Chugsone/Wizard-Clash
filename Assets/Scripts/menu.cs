@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     public void OnStartClick()
     {
+        Debug.Log("start");
         SceneManager.LoadScene("Deklin");
         
     }
