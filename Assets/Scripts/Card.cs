@@ -26,4 +26,8 @@ public class Card : MonoBehaviour
 
         thisImage = thisImage;
     }
+
+    public Card(int Id, string CardName, string Description, Sprite sprite) : this(Id, CardName, Description)
+    {
+    }
 }

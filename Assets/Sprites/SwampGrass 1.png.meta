@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SwampGrass 1_0: -2901744640956553353
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
