@@ -16,6 +16,9 @@ public class ThisCard : MonoBehaviour
     public Text nameText;
     public Text descriptionText;
 
+    public Sprite thisSprite;
+    public Image thatImage;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,7 +32,11 @@ public class ThisCard : MonoBehaviour
         cardName = thisCard[0].cardName;
         cardDescription = thisCard[0].description;
 
+        thisSprite =thisCard[0].thisImage;
+
         nameText.text = ""+cardName;
         descriptionText.text = ""+cardDescription;
+
+        thatImage.sprite = thisSprite;
     }
 }

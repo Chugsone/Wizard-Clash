@@ -8,9 +8,6 @@ public class CardDatabase : MonoBehaviour
 
     void Awake()
     {
-        
-        cardList.Add(new Card("Water", "Beats Fire"));
-        cardList.Add(new Card("Fire", "Beats Earth"));
-        cardList.Add(new Card("Earth", "Beats Water"));
+        //cardList.Add(new Card(0, "Flood", 0, 0, "Beats Fire", Resources.Load<Sprite>("1")));
     }
 }
