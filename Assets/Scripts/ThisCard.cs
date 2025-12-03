@@ -19,6 +19,11 @@ public class ThisCard : MonoBehaviour
     public Sprite thisSprite;
     public Image thatImage;
 
+    public Image frame;
+
+    public bool cardBack;
+    public static bool staticCardBack;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -38,5 +43,11 @@ public class ThisCard : MonoBehaviour
         descriptionText.text = ""+cardDescription;
 
         thatImage.sprite = thisSprite;
+
+        staticCardBack = cardBack;
+
     }
+
+
+
 }
