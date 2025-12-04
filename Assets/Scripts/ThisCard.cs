@@ -23,6 +23,7 @@ public class ThisCard : MonoBehaviour
 
     public bool cardBack;
     public static bool staticCardBack;
+    internal static int drawX;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
