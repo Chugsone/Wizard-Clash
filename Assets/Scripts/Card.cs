@@ -1,16 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Card : MonoBehaviour
+namespace CardGame
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [CreateAssetMenu(fileName = "New Card", menuName = "Card")]
+
+    public class Card : ScriptableObject 
     {
-        
+        public string cardName;
+
+        public List<CardType> cardType;
+
+        public Sprite cardSprite;
+
+        public enum CardType
+        {
+            Fire,
+            Water,
+            Earth,
+            Air
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+ 
