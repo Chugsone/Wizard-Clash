@@ -15,8 +15,8 @@ public class Manager : MonoBehaviour
         Wind,
         Storm
     }
-
-    public Text resultText;
+   
+    public TMPro.TMP_Text resultText;
     public Image AIChoice;
 
     public Choice[] Choices;
@@ -24,8 +24,8 @@ public class Manager : MonoBehaviour
 
     public void PlayString(string choice)
     {
-        //if (System.Enum.TryParse<Choice>(choice, out Choice choice2))
-            //Play(choice2, choice: Choice);
+      if (System.Enum.TryParse<Choice>(choice, out Choice choice2))
+      Play(choice2, choice: Choice);
     }
 
     public void Play(Choice myChoice, Choice choice)
