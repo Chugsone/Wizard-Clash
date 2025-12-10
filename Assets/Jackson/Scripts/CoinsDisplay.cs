@@ -5,16 +5,13 @@ using UnityEngine.UI;
 
 public class CoinsDisplay : MonoBehaviour
 {
-    private Text text;
+    private TMPro.TMP_Text text;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       text = GetComponent<Text>();
-       if (text == null)
-       {
-           Debug.LogError("CoinsDisplay: no Text component found on this GameObject.");
-       }
+       text = GetComponent<TMPro.TMP_Text>();
+       
     }
 
     // Update is called once per frame
@@ -22,7 +19,7 @@ public class CoinsDisplay : MonoBehaviour
     {
         if (text == null) return;
 
-        string[] temp = text.text.Split('$');
-        text.text = temp[0] + "$" + CoinsManager.coins;
+        string[] temp = text.text.Split("$");
+        text.SetText(temp[0] + "$" + CoinsManager.coins);
     }
 }
