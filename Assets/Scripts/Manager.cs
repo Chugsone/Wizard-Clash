@@ -24,11 +24,13 @@ public class Manager : MonoBehaviour
 
     public void PlayString(string choice)
     {
-      if (System.Enum.TryParse<Choice>(choice, out Choice choice2))
-      Play(choice2, choice: Choice);
+        if (System.Enum.TryParse(choice, out Choice choice2))
+        {
+            Play(choice2);
+        }
     }
 
-    public void Play(Choice myChoice, Choice choice)
+    public void Play(Choice myChoice)
     {
         Choice randomChoice = Choices[Random.Range(0, Choices.Length)];
 

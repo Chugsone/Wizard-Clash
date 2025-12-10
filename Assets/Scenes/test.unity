@@ -1238,9 +1238,9 @@ MonoBehaviour:
   resultText: {fileID: 915421383}
   AIChoice: {fileID: 2068825282}
   Choices: 010000000200000000000000
-  Fire: {fileID: 1098286324429101383, guid: 362858e6363469f499d4d6f4b5dcee74, type: 3}
-  Water: {fileID: 8509550459451208454, guid: 72596cd71c8cb2642be5977f52a6b027, type: 3}
-  Earth: {fileID: 6423806749927177598, guid: 9812a06bcc5d1d8498d59803d2608a18, type: 3}
+  Fire: {fileID: -6658479744553188406, guid: ac49d5ed830a8b6479002430c74ebf31, type: 3}
+  Water: {fileID: 1115103745373846433, guid: 101695f8ed8551948ab1c29a69113ff7, type: 3}
+  Earth: {fileID: 4529641765451606500, guid: 2d78ef0127260e44e8795c8b68a4eb0c, type: 3}
   Vinus: {fileID: 0}
   Tornado: {fileID: 0}
   Wind: {fileID: 0}
