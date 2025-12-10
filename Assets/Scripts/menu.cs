@@ -17,4 +17,19 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Deklin");
     }
+
+    public void OnRetryClick()
+    {
+        SceneManager.LoadScene("test");
+    }
+
+    public void OnShopClick()
+    {
+        SceneManager.LoadScene("shop");
+    }
+
+    public void OnContinueClick()
+    {
+        SceneManager.LoadScene("Warren");
+    }
 }
