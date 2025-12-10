@@ -18,7 +18,7 @@ public class Give : MonoBehaviour
 
     public void Press()
     {
-        CoinsManager.coins += 10;
+        CoinsManager.coins += 50;
         CoinsManager.UpdateCoins();
     }
 }
