@@ -260,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      treasurer (1)_0: -1745364701456512595
+      treasurer (1)_1: -9091026709338084769
+      treasurer (1)_2: -6684032095177284373
+      treasurer (1)_3: -862302114381692264
+      treasurer (1)_4: 1460372006584552372
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
