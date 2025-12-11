@@ -13,6 +13,8 @@ public class HandManager : MonoBehaviour
 
     public float fanSpread = 5f;
 
+    public float cardSpacing = 5f;
+
     public List<GameObject> cardsInHand = new List<GameObject>();
 
     void Start()
@@ -31,6 +33,10 @@ public class HandManager : MonoBehaviour
         UpdateHandVisuals();
 
     }
+    void Update() 
+    {
+        UpdateHandVisuals();
+    }
 
     private void UpdateHandVisuals()
     {
@@ -39,6 +45,9 @@ public class HandManager : MonoBehaviour
         {
             float rotationAngle = (fanSpread * (i - (cardCount - 1) / 2f));
             cardsInHand[i].transform.localRotation = Quaternion.Euler(0f, 0f, rotationAngle);
+
+            float horizontalOffset = i * cardSpacing;
+            cardsInHand[i].transform.localPosition = new Vector3(horizontalOffset, 0f, 0f);
         }
     }
 }
