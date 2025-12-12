@@ -4,20 +4,30 @@ using UnityEngine.UI;
 
 public class win : MonoBehaviour
 {
-    public int points;
+    public int playerpoints;
+    public int opponentpoints;
     public int winningPoints = 10;
-    public TMPro.TMP_Text winText; 
+    public TMPro.TMP_Text resultText; 
     public string WinText = "You Win!";
-    public Image bar;
+    public string loseText = "You Lose!";
+    public Image playerbar;
+    public Image opponentbar;
 
     void Update()
     {
-        bar.fillAmount = points / winningPoints;
+        playerbar.fillAmount = (float)playerpoints / winningPoints;
+        opponentbar.fillAmount = (float)opponentpoints / winningPoints;
 
-        if(points >= winningPoints)
+        if (playerpoints >= winningPoints)
         {
             Debug.Log("You Win!");
-            winText.SetText(WinText);
+            resultText.SetText(WinText);
         }
+        if (opponentpoints >= winningPoints)
+        {
+            Debug.Log("You Lose!");
+            resultText.SetText(loseText);
+        }
+
     }
 }

@@ -1216,11 +1216,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17ece0a6b47f47a49a17b5c98b26a3c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 0
+  playerpoints: 0
+  opponentpoints: 0
   winningPoints: 10
-  winText: {fileID: 915421383}
+  resultText: {fileID: 915421383}
   WinText: You Win!
-  bar: {fileID: 1916807918}
+  loseText: You Lose!
+  playerbar: {fileID: 1927121895}
+  opponentbar: {fileID: 1916807918}
 --- !u!4 &1625825748
 Transform:
   m_ObjectHideFlags: 0
@@ -1412,7 +1415,7 @@ GameObject:
   - component: {fileID: 1916807919}
   - component: {fileID: 1916807918}
   m_Layer: 5
-  m_Name: bar
+  m_Name: enamybar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1487,7 +1490,7 @@ GameObject:
   - component: {fileID: 1927121896}
   - component: {fileID: 1927121895}
   m_Layer: 5
-  m_Name: bar (1)
+  m_Name: playerbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
