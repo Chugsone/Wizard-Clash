@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 025debfe1b3e12040b4f695710a63318
+guid: 3e9c9a7198a5e2843add3da998bf7927
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6893308443034365055
-    second: text_0
+      213: -8312940764868719730
+    second: dragon nerd board_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: text_0
+      name: dragon nerd board_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 326
-        height: 183
+        width: 480
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1835cbd4e7c0650a0800000000000000
-      internalID: -6893308443034365055
+      spriteID: e8bc22f0b6082ac80800000000000000
+      internalID: -8312940764868719730
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      text_0: -6893308443034365055
+      dragon nerd board_0: -8312940764868719730
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
