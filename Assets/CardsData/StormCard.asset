@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec40048417c2365489a6c40b6a55f42d, type: 3}
-  m_Name: WindCard
+  m_Name: StormCard
   m_EditorClassIdentifier: 
-  cardName: Wind
+  cardName: Storm
   cardType: 03000000
-  cardSprite: {fileID: -9022525305886387141, guid: b039f80d883ae3d458fa965ab36f5265, type: 3}
+  cardSprite: {fileID: -7255364898128885475, guid: 0c1d4bf40c59aa34a82bf2fdf9d5407d, type: 3}
