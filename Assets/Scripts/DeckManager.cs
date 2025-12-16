@@ -11,6 +11,12 @@ public class DeckManager : MonoBehaviour
 
     private int currentIndex = 0;
 
+    public int maxHandSize = 5;
+
+    public int currentHandSize;
+
+    private HandManager handManager;
+
     void Start()
     {
         //load all cards from resources folder
@@ -18,6 +24,20 @@ public class DeckManager : MonoBehaviour
 
         // add the loaded cards to the allCards list
         allCards.AddRange(cards);
+
+        handManager = FindFirstObjectByType<HandManager>();
+        for (int i = 0; i < 5; i++)
+        {
+            DrawCard(handManager);
+        }
+    }
+
+    void Update()
+    {
+        if (handManager != null)
+        {
+            currentHandSize = handManager.cardsInHand.Count;
+        }
     }
 
     public void DrawCard(HandManager handManager)
