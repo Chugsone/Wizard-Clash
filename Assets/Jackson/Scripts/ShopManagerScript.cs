@@ -24,10 +24,10 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[2, 4] = 40;
 
         //Quantities
-        shopItems[3, 1] = 0;
-        shopItems[3, 2] = 0;
-        shopItems[3, 3] = 0;
-        shopItems[3, 4] = 0;
+        shopItems[3, 1] = PlayerPrefs.GetInt("Card1", 0);
+        shopItems[3, 2] = PlayerPrefs.GetInt("Card2", 0);
+        shopItems[3, 3] = PlayerPrefs.GetInt("Card3", 0);
+        shopItems[3, 4] = PlayerPrefs.GetInt("Card4", 0);
     }
 
 
@@ -41,9 +41,21 @@ public class ShopManagerScript : MonoBehaviour
             CoinsManager.UpdateCoins();
 
             shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
+            UpdateShop();
 
             ButtonRef.GetComponent<ButtonInfo>().QuantutyTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
         }
 
     }
+
+    public void UpdateShop()
+    {
+        PlayerPrefs.SetInt("Card1", shopItems[3, 1]);
+        PlayerPrefs.SetInt("Card2", shopItems[3, 2]);
+        PlayerPrefs.SetInt("Card3", shopItems[3, 3]);
+        PlayerPrefs.SetInt("Card4", shopItems[3, 4]);
+
+        PlayerPrefs.Save();
+    }
+
 }
