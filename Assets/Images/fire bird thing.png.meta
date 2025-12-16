@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fire bird thing_0: -6660019825636878508
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
