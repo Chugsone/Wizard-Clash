@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+
+
 
 #if UNITY_EDITOR
+using UnityEditor;
+
 [CustomEditor(typeof(DeckManager))]
 public class DeckManagerEditor : Editor
 {

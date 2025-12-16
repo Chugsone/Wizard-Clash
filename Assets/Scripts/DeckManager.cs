@@ -26,10 +26,12 @@ public class DeckManager : MonoBehaviour
         {
             Debug.LogWarning("No cards left in the deck to draw.");
             return;
-
-            Card nextCard = allCards[currentIndex];
-            handManager.AddCardToHand(nextCard);
-            currentIndex = (currentIndex + 1) % allCards.Count;
         }
+
+        Card nextCard = allCards[currentIndex];
+        handManager.AddCardToHand(nextCard);
+        currentIndex = (currentIndex + 1) % allCards.Count;
+
+        Debug.Log("player drew card: " + nextCard.cardName);
     }
 }
