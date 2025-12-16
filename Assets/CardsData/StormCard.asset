@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec40048417c2365489a6c40b6a55f42d, type: 3}
+  m_Name: StormCard
+  m_EditorClassIdentifier: 
+  cardName: Storm
+  cardType: 03000000
+  cardSprite: {fileID: -7255364898128885475, guid: 0c1d4bf40c59aa34a82bf2fdf9d5407d, type: 3}

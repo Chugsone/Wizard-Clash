@@ -7,7 +7,6 @@ using System;
 
 public class HandManager : MonoBehaviour
 {
-    public DeckManager deckManager;
 
     public GameObject cardPrefab;
 
@@ -20,6 +19,8 @@ public class HandManager : MonoBehaviour
     public float verticalSpacing = 100f;
 
     public List<GameObject> cardsInHand = new List<GameObject>();
+
+  
 
     void Start()
     {
