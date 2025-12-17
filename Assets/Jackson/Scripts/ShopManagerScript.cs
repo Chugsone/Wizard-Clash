@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ShopManagerScript : MonoBehaviour
 {
 
-    public int[,] shopItems = new int[11, 11];
+    public int[,] shopItems = new int[13, 13];
 
     void Start()
     {
@@ -22,6 +22,8 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[1, 8] = 8;    
         shopItems[1, 9] = 9;
         shopItems[1, 10] = 10;
+        shopItems[1, 11] = 11;
+        shopItems[1, 12] = 12;
 
         //Prices
         shopItems[2, 1] = 10;
@@ -34,6 +36,8 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[2, 8] = 80;
         shopItems[2, 9] = 90;
         shopItems[2, 10] = 100;
+        shopItems[2, 11] = 110;
+        shopItems[2, 12] = 120;
 
         //Quantities
         shopItems[3, 1] = PlayerPrefs.GetInt("Card1", 0);
@@ -46,6 +50,8 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[3, 8] = PlayerPrefs.GetInt("Card8", 0);
         shopItems[3, 9] = PlayerPrefs.GetInt("Card9", 0);
         shopItems[3, 10] = PlayerPrefs.GetInt("Card10", 0);
+        shopItems[3, 11] = PlayerPrefs.GetInt("Card11", 0);
+        shopItems[3, 12] = PlayerPrefs.GetInt("Card12", 0);
     }
 
 
@@ -78,6 +84,8 @@ public class ShopManagerScript : MonoBehaviour
         PlayerPrefs.SetInt("Card8", shopItems[3, 8]);
         PlayerPrefs.SetInt("Card9", shopItems[3, 9]);
         PlayerPrefs.SetInt("Card10", shopItems[3, 10]);
+        PlayerPrefs.SetInt("Card11", shopItems[3, 11]);
+        PlayerPrefs.SetInt("Card12", shopItems[3, 12]);
 
         PlayerPrefs.Save();
     }
