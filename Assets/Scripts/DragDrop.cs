@@ -18,9 +18,12 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         parentAfterDrag = this.transform.parent;
         this.transform.SetParent(this.transform.root);
         transform.SetAsLastSibling();
-        GetComponent<Image>().raycastTarget = false;
+        GetComponentInChildren<Image>().raycastTarget = false;
 
         currentDraggedItem = this;
+
+        FindFirstObjectByType<HandManager>().cardsInHand.Remove(this.gameObject);
+        transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
     }
     public void OnDrag(PointerEventData eventData)
     {
@@ -34,7 +37,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         Debug.Log("OnEndDrag");
         this.transform.SetParent(parentAfterDrag);
         currentDraggedItem = null; 
-        GetComponent<Image>().raycastTarget = true;
+        GetComponentInChildren<Image>().raycastTarget = true;
     }
 
 

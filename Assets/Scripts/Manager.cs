@@ -13,7 +13,14 @@ public class Manager : MonoBehaviour
         Vinus, 
         Tornado,
         Wind,
-        Storm
+        Storm,
+        Rain,
+        Pheonix,
+        IceShards,
+        Vines,
+        MudSlide,
+        WindGust,
+        Meteor
     }
    
     public TMPro.TMP_Text resultText;
