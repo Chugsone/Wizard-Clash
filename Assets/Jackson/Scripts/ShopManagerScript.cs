@@ -26,18 +26,18 @@ public class ShopManagerScript : MonoBehaviour
         shopItems[1, 12] = 12;
 
         //Prices
-        shopItems[2, 1] = 10;
+        shopItems[2, 1] = 20;
         shopItems[2, 2] = 20;
-        shopItems[2, 3] = 30;
-        shopItems[2, 4] = 40;
-        shopItems[2, 5] = 50;
-        shopItems[2, 6] = 60;
-        shopItems[2, 7] = 70;
-        shopItems[2, 8] = 80;
-        shopItems[2, 9] = 90;
-        shopItems[2, 10] = 100;
-        shopItems[2, 11] = 110;
-        shopItems[2, 12] = 120;
+        shopItems[2, 3] = 20;
+        shopItems[2, 4] = 30;
+        shopItems[2, 5] = 30;
+        shopItems[2, 6] = 30;
+        shopItems[2, 7] = 40;
+        shopItems[2, 8] = 40;
+        shopItems[2, 9] = 40;
+        shopItems[2, 10] = 60;
+        shopItems[2, 11] = 60;
+        shopItems[2, 12] = 60;
 
         //Quantities
         shopItems[3, 1] = PlayerPrefs.GetInt("Card1", 0);
