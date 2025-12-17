@@ -26,6 +26,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CaveScene.unity
     guid: aa77a1b78505fb24cbfc017a7e0743c7
+  - enabled: 1
+    path: Assets/Scenes/DeepCave.unity
+    guid: e7c9b1ac2df4c60488b74b9e7e9bbd2c
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 68cfaff6d8c1d6643ab3ff21180539d7
+  - enabled: 1
+    path: Assets/Scenes/Mikel.unity
+    guid: 057e089ace03d0c4ca4c43ea471ffe1b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 7667cd40305d4a54f8aa28688f428dd9, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
