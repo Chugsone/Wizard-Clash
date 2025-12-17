@@ -37,57 +37,44 @@ public class GameManager : MonoBehaviour
             GameObject prefab = Resources.Load<GameObject>("Prefabs/OptionsManager");
             if (prefab == null)
             {
-                Debug.Log($"OptionsManager prefab not found")
+                Debug.Log($"OptionsManager prefab not found");
             }
             else
             {
-                InitializeManagers(prefab, transform.position, Quarternion.identity, transform);
+                Instantiate(prefab, transform.position, Quaternion.identity, transform);
                 OptionsManager = GetComponentInChildren<OptionsManager>();
             }
         }
-    }
-
-
-
-    private void InitializeManagers()
-    {
-        OptionsManager = FindFirstObjectByType<OptionsManager>();
-        AudioManager = FindFirstObjectByType<AudioManager>();
-        DeckManager = FindFirstObjectByType<DeckManager>();
 
         if (AudioManager == null)
         {
-            GameObject prefab = Resources.Load<GameObject>("Prefabs/OptionsManager");
+            GameObject prefab = Resources.Load<GameObject>("Prefabs/AudioManager");
             if (prefab == null)
             {
-                Debug.Log($"AudioManager prefab not found")
+                Debug.Log($"AudioManager prefab not found");
             }
             else
             {
-                InitializeManagers(prefab, transform.position, Quarternion.identity, transform);
-                OptionsManager = GetComponentInChildren<AudioManager>();
+                Instantiate(prefab, transform.position, Quaternion.identity, transform);
+                AudioManager = GetComponentInChildren<AudioManager>();
             }
         }
-    }
 
-    private void InitializeManagers()
-    {
-        OptionsManager = FindFirstObjectByType<OptionsManager>();
-        AudioManager = FindFirstObjectByType<AudioManager>();
-        DeckManager = FindFirstObjectByType<DeckManager>();
 
         if (DeckManager == null)
         {
-            GameObject prefab = Resources.Load<GameObject>("Prefabs/OptionsManager");
+            GameObject prefab = Resources.Load<GameObject>("Prefabs/DeckManager");
             if (prefab == null)
             {
-                Debug.Log($"DeckManager prefab not found")
+                Debug.Log($"DeckManager prefab not found");
             }
             else
             {
-                InitializeManagers(prefab, transform.position, Quarternion.identity, transform);
-                OptionsManager = GetComponentInChildren<DeckManager>();
+                Instantiate(prefab, transform.position, Quaternion.identity, transform);
+                DeckManager = GetComponentInChildren<DeckManager>();
             }
         }
+
     }
+    
 }
