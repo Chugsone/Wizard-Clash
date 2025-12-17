@@ -1016,7 +1016,7 @@ GameObject:
   - component: {fileID: 527436687}
   - component: {fileID: 527436686}
   m_Layer: 0
-  m_Name: levelthreepoint
+  m_Name: CaveLevelPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1070,7 +1070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e1aca3e2a832b14fb92bbc1242466f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: 
+  sceneName: CaveScene
 --- !u!212 &527436688
 SpriteRenderer:
   m_ObjectHideFlags: 0
