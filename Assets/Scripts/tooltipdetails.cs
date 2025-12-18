@@ -15,11 +15,11 @@ public class tooltipdetails : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     {
         
     }
-    public void onPointerEnter(PointerEventData eventData)
+    public void OnPointerEnter(PointerEventData eventData)
     {
         tooltips.Instance.Show();
     }
-    public void onPointerExit(PointerEventData eventData)
+    public void OnPointerExit(PointerEventData eventData)
     {
         tooltips.Instance.Hide();
     }
