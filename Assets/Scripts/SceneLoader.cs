@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SceneLoader : MonoBehaviour
+public class WinToShop : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void OnStartClick()
     {
-        
+        Debug.Log("start");
+        SceneManager.LoadScene("shop");
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnQuitClick()
     {
-        
+        SceneManager.LoadScene("shop");
     }
 }
