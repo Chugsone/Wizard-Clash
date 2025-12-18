@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec40048417c2365489a6c40b6a55f42d, type: 3}
   m_Name: WaterCard
   m_EditorClassIdentifier: 
-  cardName: Tsunami
-  cardType: 01000000
-  cardSprite: {fileID: 1115103745373846433, guid: 101695f8ed8551948ab1c29a69113ff7, type: 3}
+  cardName: Tornado
+  cardType: 06000000
+  cardSprite: {fileID: -2105305842262875611, guid: 0fb00b146ad07c44f980d0dfd622f093, type: 3}

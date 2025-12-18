@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: RainCard
   m_EditorClassIdentifier: 
   cardName: Rain
-  cardType: 03000000
+  cardType: 06000000
   cardSprite: {fileID: -6830152201372448578, guid: ba2fc8e43bcac4e4a8f706cdd01b11af, type: 3}

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec40048417c2365489a6c40b6a55f42d, type: 3}
-  m_Name: FireCard
+  m_Name: FirebIrdCard
   m_EditorClassIdentifier: 
-  cardName: FireBall
-  cardType: 00000000
-  cardSprite: {fileID: -6658479744553188406, guid: ac49d5ed830a8b6479002430c74ebf31, type: 3}
+  cardName: Pheonix
+  cardType: 07000000
+  cardSprite: {fileID: -6660019825636878508, guid: 3464ddc34052d9b419519b1134011999, type: 3}

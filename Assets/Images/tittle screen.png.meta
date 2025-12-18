@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3464ddc34052d9b419519b1134011999
+guid: a3aa425fc3af31448895dfe9e78526f1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6660019825636878508
-    second: fire bird thing_0
+      213: 7871625456053369436
+    second: tittle screen_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fire bird thing_0
+      name: tittle screen_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 7
-        width: 34
-        height: 46
+        x: 0
+        y: 0
+        width: 480
+        height: 270
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 457dadf314bd293a0800000000000000
-      internalID: -6660019825636878508
+      spriteID: c5abbf885a1ad3d60800000000000000
+      internalID: 7871625456053369436
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b64455a721d9d43438b892c8c142ed62
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      fire bird thing_0: -6660019825636878508
+      tittle screen_0: 7871625456053369436
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

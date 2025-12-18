@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec40048417c2365489a6c40b6a55f42d, type: 3}
-  m_Name: EarthCard
+  m_Name: TornadoCard
   m_EditorClassIdentifier: 
-  cardName: EarthQuake
-  cardType: 02000000
-  cardSprite: {fileID: 4529641765451606500, guid: 2d78ef0127260e44e8795c8b68a4eb0c, type: 3}
+  cardName: Tornado
+  cardType: 03000000
+  cardSprite: {fileID: -2105305842262875611, guid: 0fb00b146ad07c44f980d0dfd622f093, type: 3}

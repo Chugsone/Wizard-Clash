@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec40048417c2365489a6c40b6a55f42d, type: 3}
   m_Name: EarthCard
   m_EditorClassIdentifier: 
-  cardName: EarthQuake
+  cardName: Vinus FlyTrap
   cardType: 02000000
   cardSprite: {fileID: 4529641765451606500, guid: 2d78ef0127260e44e8795c8b68a4eb0c, type: 3}

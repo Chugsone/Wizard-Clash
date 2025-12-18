@@ -9,18 +9,19 @@ public class MainMenu : MonoBehaviour
     public void OnStartClick()
     {
         Debug.Log("start");
-        SceneManager.LoadScene("Deklin");
+        SceneManager.LoadScene("Map");
         
     }
 
     public void OnQuitClick()
     {
-        SceneManager.LoadScene("Deklin");
+        Debug.Log("quit");
+        Application.Quit();
     }
 
     public void OnRetryClick()
     {
-        SceneManager.LoadScene("test");
+        SceneManager.LoadScene("Map");
     }
 
     public void OnShopClick()
@@ -30,6 +31,12 @@ public class MainMenu : MonoBehaviour
 
     public void OnContinueClick()
     {
-        SceneManager.LoadScene("Warren");
+        SceneManager.LoadScene("Map");
     }
-}
+
+    public void OnCreditsClick()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+     
+    }
