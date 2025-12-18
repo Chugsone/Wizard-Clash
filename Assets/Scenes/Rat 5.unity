@@ -402,6 +402,66 @@ RectTransform:
   m_AnchoredPosition: {x: 147.55936, y: 627.1091}
   m_SizeDelta: {x: 23182.441, y: 72874.52}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &134744683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 134744685}
+  - component: {fileID: 134744684}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &134744684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134744683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 081a9194fafebda4681e891ef6b3941a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resultText: {fileID: 0}
+  AIChoice: {fileID: 0}
+  Choices: 
+  Fire: {fileID: -6804801868860867171, guid: 8c02fa3a43f23f344bf4179a4960000b, type: 3}
+  Tsunami: {fileID: 1115103745373846433, guid: 101695f8ed8551948ab1c29a69113ff7, type: 3}
+  Vinus: {fileID: 4529641765451606500, guid: 2d78ef0127260e44e8795c8b68a4eb0c, type: 3}
+  Tornado: {fileID: -2105305842262875611, guid: 0fb00b146ad07c44f980d0dfd622f093, type: 3}
+  Wind: {fileID: 0}
+  Storm: {fileID: -7255364898128885475, guid: 0c1d4bf40c59aa34a82bf2fdf9d5407d, type: 3}
+  Rain: {fileID: -6830152201372448578, guid: ba2fc8e43bcac4e4a8f706cdd01b11af, type: 3}
+  Pheonix: {fileID: -6660019825636878508, guid: 3464ddc34052d9b419519b1134011999, type: 3}
+  IceShards: {fileID: 5828124777115410962, guid: 7268a93083d74c04e9b902f3496debdc, type: 3}
+  Vines: {fileID: -7575608683921116794, guid: 5cf566cf6743ffc4e8b6387ebac520ce, type: 3}
+  MudSlide: {fileID: -5830117999481824458, guid: 99835c936e4c4474c9eb54d53742dbe5, type: 3}
+  WindGust: {fileID: -9022525305886387141, guid: b039f80d883ae3d458fa965ab36f5265, type: 3}
+  Meteor: {fileID: -6658479744553188406, guid: ac49d5ed830a8b6479002430c74ebf31, type: 3}
+--- !u!4 &134744685
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134744683}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1034479, y: -0.61335915, z: -0.021398112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &173344892
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,66 +744,6 @@ RectTransform:
   m_AnchoredPosition: {x: 147.55936, y: 1045.9376}
   m_SizeDelta: {x: 27165.266, y: 8889.483}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &223458505
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 223458507}
-  - component: {fileID: 223458506}
-  m_Layer: 0
-  m_Name: Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &223458506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223458505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 081a9194fafebda4681e891ef6b3941a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resultText: {fileID: 0}
-  AIChoice: {fileID: 0}
-  Choices: 
-  Fire: {fileID: -6804801868860867171, guid: 8c02fa3a43f23f344bf4179a4960000b, type: 3}
-  Tsunami: {fileID: 0}
-  Vinus: {fileID: 0}
-  Tornado: {fileID: 0}
-  Wind: {fileID: 0}
-  Storm: {fileID: 0}
-  Rain: {fileID: 0}
-  Pheonix: {fileID: 0}
-  IceShards: {fileID: 0}
-  Vines: {fileID: 0}
-  MudSlide: {fileID: 0}
-  WindGust: {fileID: 0}
-  Meteor: {fileID: 0}
---- !u!4 &223458507
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223458505}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1034479, y: -0.61335915, z: -0.021398112}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &351229090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,6 +1496,58 @@ MonoBehaviour:
   cardSpacing: -184
   verticalSpacing: 67
   cardsInHand: []
+--- !u!1 &1015627584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1015627586}
+  - component: {fileID: 1015627585}
+  m_Layer: 0
+  m_Name: WinManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1015627585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015627584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ece0a6b47f47a49a17b5c98b26a3c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerpoints: 0
+  opponentpoints: 0
+  winningPoints: 10
+  resultText: {fileID: 0}
+  WinText: You Win!
+  loseText: You Lose!
+  playerbar: {fileID: 0}
+  opponentbar: {fileID: 0}
+--- !u!4 &1015627586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015627584}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 930.24316, y: 1132.2057, z: -12.704082}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1178539800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2602,9 +2654,10 @@ SceneRoots:
   - {fileID: 613814508}
   - {fileID: 1691653629}
   - {fileID: 1389041821}
-  - {fileID: 223458507}
   - {fileID: 2099633497}
   - {fileID: 1391030000}
   - {fileID: 1673762402}
   - {fileID: 351229093}
   - {fileID: 439794368}
+  - {fileID: 1015627586}
+  - {fileID: 134744685}
