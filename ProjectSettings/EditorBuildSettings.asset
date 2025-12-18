@@ -9,38 +9,20 @@ EditorBuildSettings:
     path: Assets/Scenes/mainmenu.unity
     guid: cf479dae19f93f544b8d75893cdc22ab
   - enabled: 1
-    path: Assets/Scenes/test.unity
-    guid: 7c269c260a0915a4fb2bd4c9e4d4704e
+    path: Assets/Scenes/Pause.unity
+    guid: 1d9721d4fea4bff4b979e09fe5ae5431
   - enabled: 1
-    path: Assets/Scenes/Deklin.unity
-    guid: a8f9e44816d7d0140a939a287ac547be
+    path: Assets/Scenes/Unicorn 4.unity
+    guid: b11de8c6d9aafde45822666b0c308eb2
   - enabled: 1
-    path: Assets/Scenes/Warren.unity
-    guid: 2f74291bbe12073438d9d22f6cb0d1a5
+    path: Assets/Scenes/Fairy 2.unity
+    guid: 51686b11db7d7044fb795ee6736aba32
   - enabled: 1
-    path: Assets/Jackson/Scences/shop.unity
-    guid: fef5ae876d1875a41898e15618c60bcd
+    path: Assets/Scenes/Rat 5.unity
+    guid: 2de18979208ab1347ad7215dcca69d82
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/CaveScene.unity
-    guid: aa77a1b78505fb24cbfc017a7e0743c7
-  - enabled: 1
-    path: Assets/Scenes/DeepCave.unity
-    guid: e7c9b1ac2df4c60488b74b9e7e9bbd2c
-  - enabled: 1
-    path: Assets/Scenes/Forest.unity
-    guid: 68cfaff6d8c1d6643ab3ff21180539d7
-  - enabled: 1
-    path: Assets/Scenes/Unicorn.unity
-    guid: 057e089ace03d0c4ca4c43ea471ffe1b
-  - enabled: 1
-    path: Assets/Scenes/River.unity
-    guid: 4cb0ac6ed5893ed4cb1c96f8f8b70664
-  - enabled: 1
-    path: Assets/Scenes/SwampHut.unity
-    guid: 202e2258a1c4e904cba468af09388bfd
+    path: Assets/Scenes/Dragon 3.unity
+    guid: 7de04dc1832eac042bd3ada8caaba923
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 7667cd40305d4a54f8aa28688f428dd9, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
