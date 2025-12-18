@@ -5665,8 +5665,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: result
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8a3bebb2f3bf9a640852946fa438e6bf, type: 2}
-  m_sharedMaterial: {fileID: 7485997141894588427, guid: 8a3bebb2f3bf9a640852946fa438e6bf, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11020,8 +11020,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: enamy points
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8a3bebb2f3bf9a640852946fa438e6bf, type: 2}
-  m_sharedMaterial: {fileID: 7485997141894588427, guid: 8a3bebb2f3bf9a640852946fa438e6bf, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11156,8 +11156,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: my points
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8a3bebb2f3bf9a640852946fa438e6bf, type: 2}
-  m_sharedMaterial: {fileID: 7485997141894588427, guid: 8a3bebb2f3bf9a640852946fa438e6bf, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -11428,13 +11428,19 @@ MonoBehaviour:
   resultText: {fileID: 915421383}
   AIChoice: {fileID: 2068825282}
   Choices: 010000000200000000000000
-  Fire: {fileID: -6658479744553188406, guid: ac49d5ed830a8b6479002430c74ebf31, type: 3}
-  Water: {fileID: 1115103745373846433, guid: 101695f8ed8551948ab1c29a69113ff7, type: 3}
-  Earth: {fileID: 4529641765451606500, guid: 2d78ef0127260e44e8795c8b68a4eb0c, type: 3}
-  Vinus: {fileID: 0}
-  Tornado: {fileID: 0}
+  Fire: {fileID: -6804801868860867171, guid: 8c02fa3a43f23f344bf4179a4960000b, type: 3}
+  Tsunami: {fileID: 1115103745373846433, guid: 101695f8ed8551948ab1c29a69113ff7, type: 3}
+  Vinus: {fileID: 4529641765451606500, guid: 2d78ef0127260e44e8795c8b68a4eb0c, type: 3}
+  Tornado: {fileID: -2105305842262875611, guid: 0fb00b146ad07c44f980d0dfd622f093, type: 3}
   Wind: {fileID: 0}
-  Storm: {fileID: 0}
+  Storm: {fileID: -7255364898128885475, guid: 0c1d4bf40c59aa34a82bf2fdf9d5407d, type: 3}
+  Rain: {fileID: -6830152201372448578, guid: ba2fc8e43bcac4e4a8f706cdd01b11af, type: 3}
+  Pheonix: {fileID: -6660019825636878508, guid: 3464ddc34052d9b419519b1134011999, type: 3}
+  IceShards: {fileID: 0}
+  Vines: {fileID: -7575608683921116794, guid: 5cf566cf6743ffc4e8b6387ebac520ce, type: 3}
+  MudSlide: {fileID: -5830117999481824458, guid: 99835c936e4c4474c9eb54d53742dbe5, type: 3}
+  WindGust: {fileID: -9022525305886387141, guid: b039f80d883ae3d458fa965ab36f5265, type: 3}
+  Meteor: {fileID: -6658479744553188406, guid: ac49d5ed830a8b6479002430c74ebf31, type: 3}
 --- !u!4 &1788545915
 Transform:
   m_ObjectHideFlags: 0

@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Forest.unity
     guid: 68cfaff6d8c1d6643ab3ff21180539d7
   - enabled: 1
-    path: Assets/Scenes/Mikel.unity
+    path: Assets/Scenes/Unicorn.unity
     guid: 057e089ace03d0c4ca4c43ea471ffe1b
   - enabled: 1
     path: Assets/Scenes/River.unity

@@ -266,12 +266,12 @@ public class Manager : MonoBehaviour
                         break;
 
                     case Choice.Tornado:
-                        resultText.text = "Draw!";
+                        resultText.text = "You Lose!";
+                        FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
                     case Choice.Rain:
-                        resultText.text = "You Lose!"; 
-                        FindFirstObjectByType<win>().opponentpoints++;
+                        resultText.text = "Draw"; 
                         break;
 
                     case Choice.Storm:
@@ -280,8 +280,8 @@ public class Manager : MonoBehaviour
                         break;
 
                     case Choice.Tsunami:
-                        resultText.text = "You Win!";
-                        FindFirstObjectByType<win>().playerpoints++;
+                        resultText.text = "You Lose!";
+                        FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
                     case Choice.Pheonix:
@@ -300,8 +300,7 @@ public class Manager : MonoBehaviour
                         break;
 
                     case Choice.WindGust:
-                        resultText.text = "You Win!";
-                        FindFirstObjectByType<win>().playerpoints++;
+                        resultText.text = "Draw!";
                         break;
 
                     case Choice.Meteor:
@@ -311,75 +310,6 @@ public class Manager : MonoBehaviour
 
                 }
                 AIChoice.sprite = Wind;
-                break;
-
-            case Choice.Storm:
-                switch (myChoice)
-                {
-                    case Choice.Storm:
-                        resultText.text = "Draw!";
-                        break;
-
-                    case Choice.Tornado:
-                        resultText.text = "Draw!";
-                        break;
-
-                    case Choice.Fire:
-                        resultText.text = "You Lose!"; 
-                        FindFirstObjectByType<win>().opponentpoints++;
-                        break;
-
-                    case Choice.Wind:
-                        resultText.text = "You Win!";
-                        FindFirstObjectByType<win>().playerpoints++;
-                        break;
-
-                    case Choice.Rain:
-                        resultText.text = "Draw!";
-                        break;
-
-                    case Choice.Vinus:
-                        resultText.text = "You Lose!"; 
-                        FindFirstObjectByType<win>().opponentpoints++;
-                        break;
-
-                    case Choice.Vines:
-                        resultText.text = "You Lose!"; 
-                        FindFirstObjectByType<win>().opponentpoints++;
-                        break;
-
-                    case Choice.Tsunami:
-                        resultText.text = "You Win!";
-                        FindFirstObjectByType<win>().playerpoints++;
-                        break;
-
-                    case Choice.Pheonix:
-                        resultText.text = "You Win!";
-                        FindFirstObjectByType<win>().playerpoints++;
-                        break;
-
-                    case Choice.IceShards:
-                        resultText.text = "You Lose!";
-                        FindFirstObjectByType<win>().opponentpoints++;
-                        break;
-
-                    case Choice.MudSlide:
-                        resultText.text = "You Lose!";
-                        FindFirstObjectByType<win>().opponentpoints++;
-                        break;
-
-                    case Choice.WindGust:
-                        resultText.text = "You Win!";
-                        FindFirstObjectByType<win>().playerpoints++;
-                        break;
-
-                    case Choice.Meteor:
-                        resultText.text = "You Win!";
-                        FindFirstObjectByType<win>().playerpoints++;
-                        break;
-
-                }
-                AIChoice.sprite = Storm;
                 break;
 
             case Choice.Tornado:
@@ -409,8 +339,8 @@ public class Manager : MonoBehaviour
                         break;
 
                     case Choice.Vinus:
-                        resultText.text = "You Win!";
-                        FindFirstObjectByType<win>().playerpoints++;
+                        resultText.text = "You Lose!";
+                        FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
                     case Choice.Vines:
@@ -521,13 +451,469 @@ public class Manager : MonoBehaviour
             case Choice.Meteor:
                 switch (myChoice)
                 {
+                    case Choice.Fire:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Tsunami:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Vinus:
+                        resultText.text = "You Win!";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Tornado:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Wind:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Storm:
+                        resultText.text = "You Lose!";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Rain:
+                        resultText.text = "You Lose!";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Pheonix:
+                        resultText.text = "Draw!";
+                        break;
+
+                    case Choice.IceShards:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Vines:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.MudSlide:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.WindGust:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Meteor:
+                        resultText.text = "Draw";
+                        break;
+                }
+                AIChoice.sprite = Meteor;
+                break;
+
+            case Choice.WindGust:
+                switch (myChoice)
+                {
+                    case Choice.Fire:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Tsunami:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Vinus:
+                        resultText.text = "You Win!";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Tornado:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Wind:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Storm:
+                        resultText.text = "Draw";
+                        break;
+
                     case Choice.Rain:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
+
+                    case Choice.Pheonix:
+                        resultText.text = "Draw!";
+                        break;
+
+                    case Choice.IceShards:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Vines:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.MudSlide:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.WindGust:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Meteor:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
                 }
+                AIChoice.sprite = WindGust;
+                break;
 
+            case Choice.MudSlide:
+                switch (myChoice)
+                {
+                    case Choice.Fire:
+                        resultText.text = "You lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
 
+                    case Choice.Tsunami:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Vinus:
+                        resultText.text = "You Win!";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Tornado:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Wind:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Storm:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Rain:
+                        resultText.text = "You Lose!";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Pheonix:
+                        resultText.text = "You Lose!";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.IceShards:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Vines:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.MudSlide:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.WindGust:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Meteor:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+                }
+                AIChoice.sprite = MudSlide;
+                break;
+
+            case Choice.IceShards:
+                switch (myChoice)
+                {
+                    case Choice.Fire:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Tsunami:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Vinus:
+                        resultText.text = "You Win!";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Tornado:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Wind:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Storm:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Rain:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Pheonix:
+                        resultText.text = "You Lose!";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.IceShards:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Vines:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.MudSlide:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.WindGust:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Meteor:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+                }
+                AIChoice.sprite = IceShards;
+                break;
+
+            case Choice.Pheonix:
+                switch (myChoice)
+                {
+                    case Choice.Fire:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Tsunami:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Vinus:
+                        resultText.text = "You Win!";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Tornado:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Wind:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Storm:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Rain:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Pheonix:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.IceShards:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Vines:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.MudSlide:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.WindGust:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Meteor:
+                        resultText.text = "Draw";
+                        break;
+                }
+                AIChoice.sprite = Pheonix;
+                break;
+
+            case Choice.Storm:
+                switch (myChoice)
+                {
+                    case Choice.Fire:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Tsunami:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Vinus:
+                        resultText.text = "You Win!";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Tornado:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Wind:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Storm:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Rain:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Pheonix:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.IceShards:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Vines:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.MudSlide:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.WindGust:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Meteor:
+                        resultText.text = "Draw";
+                        break;
+                }
+                AIChoice.sprite = Storm;
+                break;
+
+            case Choice.Tsunami:
+                switch (myChoice)
+                {
+                    case Choice.Fire:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Tsunami:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Vinus:
+                        resultText.text = "You Win!";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Tornado:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.Wind:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Storm:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Rain:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.Pheonix:
+                        resultText.text = "Draw";
+                        break;
+
+                    case Choice.IceShards:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Vines:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.MudSlide:
+                        resultText.text = "You Lose";
+                        FindFirstObjectByType<win>().opponentpoints++;
+                        break;
+
+                    case Choice.WindGust:
+                        resultText.text = "You Win";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Choice.Meteor:
+                        resultText.text = "Draw";
+                        break;
+                }
+                AIChoice.sprite = Tsunami;
+                break;
         }
     }
 }

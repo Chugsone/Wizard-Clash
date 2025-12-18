@@ -17,9 +17,18 @@ namespace CardGame
         public enum CardType
         {
             Fire,
-            Water,
-            Earth,
-            Air
+            Tsunami,
+            Vinus,
+            Tornado,
+            Wind,
+            Storm,
+            Rain,
+            Pheonix,
+            IceShards,
+            Vines,
+            MudSlide,
+            WindGust,
+            Meteor
         }
     }
 
