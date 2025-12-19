@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Collections;
 public class tooltipdetails : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
+    public string TitleText;
+    public string DetailText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,11 +19,11 @@ public class tooltipdetails : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        tooltips.Instance.Show();
+        tooltips.Instance.Show(TitleText, DetailText);
     }
     public void OnPointerExit(PointerEventData eventData)
     {
-        tooltips.Instance.Hide();
+        tooltips.Instance.Hide(TitleText, DetailText);
     }
 }
 

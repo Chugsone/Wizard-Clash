@@ -6,6 +6,7 @@ public class tooltips : MonoBehaviour
     public Canvas ParentCanvas;
     public Transform ToolTipTransform;
     public static tooltips Instance;
+
     void Start()
     {
         Instance = this;
@@ -25,11 +26,11 @@ public class tooltips : MonoBehaviour
             Debug.LogWarning("ToolTipTransform or ParentCanvas is not assigned.");
         }
     }
-    public void Show()
+    public void Show(string TitleText,string DetailText)
     {
         ToolTipTransform.gameObject.SetActive(true);
     }
-    public void Hide()
+    public void Hide(string titleText, string DetailText)
     {
         ToolTipTransform.gameObject.SetActive(false);
     }
