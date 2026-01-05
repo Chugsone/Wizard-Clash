@@ -28,6 +28,5 @@ public class win : MonoBehaviour
             Debug.Log("You Lose!");
             resultText.SetText(loseText);
         }
-
     }
 }

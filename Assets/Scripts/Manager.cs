@@ -58,7 +58,7 @@ public class Manager : MonoBehaviour
                         break;
 
                     case Choice.Wind:
-                        resultText.text = "Draw!";
+                        resultText.text = "You Win!";
                         break;
 
                     case Choice.Fire:
