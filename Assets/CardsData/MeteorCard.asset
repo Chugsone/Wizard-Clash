@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MeteorCard
   m_EditorClassIdentifier: 
   cardName: Meteor
-  cardType: 0c000000
+  cardType: 12
   cardSprite: {fileID: -6658479744553188406, guid: ac49d5ed830a8b6479002430c74ebf31, type: 3}

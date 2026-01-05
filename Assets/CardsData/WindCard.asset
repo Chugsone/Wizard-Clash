@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: WindCard
   m_EditorClassIdentifier: 
   cardName: Wind Gust
-  cardType: 0b000000
+  cardType: 11
   cardSprite: {fileID: -9022525305886387141, guid: b039f80d883ae3d458fa965ab36f5265, type: 3}

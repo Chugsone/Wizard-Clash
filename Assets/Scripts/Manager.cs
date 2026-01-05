@@ -1,107 +1,94 @@
+using CardGame;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Manager : MonoBehaviour
 {
-    public enum Choice
-    {
-        Fire,
-        Tsunami,
-        Vinus, 
-        Tornado,
-        Wind,
-        Storm,
-        Rain,
-        Pheonix,
-        IceShards,
-        Vines,
-        MudSlide,
-        WindGust,
-        Meteor
-    }
-   
     public TMPro.TMP_Text resultText;
     public Image AIChoice;
 
-    public Choice[] Choices;
+    //private Vector2 _gizmosPosition = new Vector2()
+
+    public Card.CardType[] Choices;
     public Sprite Fire, Tsunami, Vinus, Tornado, Wind, Storm, Rain, Pheonix, IceShards, Vines, MudSlide, WindGust, Meteor;
 
     public void PlayString(string choice)
     {
-        if (System.Enum.TryParse(choice, out Choice choice2))
+        if (System.Enum.TryParse(choice, out Card.CardType choice2))
         {
             Play(choice2);
         }
     }
 
-    public void Play(Choice myChoice)
+    public void Play(Card.CardType myChoice)
     {
-        Choice randomChoice = Choices[Random.Range(0, Choices.Length)];
+        Card.CardType randomChoice = Choices[Random.Range(0, Choices.Length)];
 
         switch (randomChoice)
         {
-            case Choice.Vines:
+            case Card.CardType.Vines:
                 switch (myChoice)
                 {
-                    case Choice.Vines:
+                    case Card.CardType.Vines:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Vinus:
+                    case Card.CardType.Vinus:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Tornado:
+                    case Card.CardType.Tornado:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Wind:
-                        resultText.text = "You Win!";
+                    case Card.CardType.Wind:
+                        resultText.text = "Draw!";
                         break;
 
-                    case Choice.Fire:
+                    case Card.CardType.Fire:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Rain:
+                    case Card.CardType.Rain:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Storm:
+                    case Card.CardType.Storm:
                         resultText.text = "You Lose!"; 
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Tsunami:
+                    case Card.CardType.Tsunami:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Pheonix:
+                    case Card.CardType.Pheonix:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.IceShards:
+                    case Card.CardType.IceShards:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.MudSlide:
+                    case Card.CardType.MudSlide:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.WindGust:
+                    case Card.CardType.WindGust:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Meteor:
+                    case Card.CardType.Meteor:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
@@ -109,65 +96,65 @@ public class Manager : MonoBehaviour
                 AIChoice.sprite = Vines;
                 break;
 
-            case Choice.Rain:
+            case Card.CardType.Rain:
                 switch (myChoice)
                 {
-                    case Choice.Fire:
+                    case Card.CardType.Fire:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Vinus:
+                    case Card.CardType.Vinus:
                         resultText.text = "You Lose!"; 
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Vines:
+                    case Card.CardType.Vines:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
-                    case Choice.Rain:
+                    case Card.CardType.Rain:
                         resultText.text = "Draw!";
                         break;
 
-                        case Choice.Storm:
+                        case Card.CardType.Storm:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Tornado:
+                    case Card.CardType.Tornado:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Wind:
+                    case Card.CardType.Wind:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Tsunami:
-                        resultText.text = "You Win!";
-                        FindFirstObjectByType<win>().playerpoints++;
-                        break;
-
-                    case Choice.Pheonix:
+                    case Card.CardType.Tsunami:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.IceShards:
+                    case Card.CardType.Pheonix:
+                        resultText.text = "You Win!";
+                        FindFirstObjectByType<win>().playerpoints++;
+                        break;
+
+                    case Card.CardType.IceShards:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.MudSlide:
+                    case Card.CardType.MudSlide:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.WindGust:
+                    case Card.CardType.WindGust:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Meteor:
+                    case Card.CardType.Meteor:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
@@ -175,69 +162,69 @@ public class Manager : MonoBehaviour
                 AIChoice.sprite = Rain;
                 break;
 
-            case Choice.Fire:
+            case Card.CardType.Fire:
                 switch (myChoice)
                 {
-                    case Choice.Rain:
+                    case Card.CardType.Rain:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Storm:
+                    case Card.CardType.Storm:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Wind:
+                    case Card.CardType.Wind:
                         resultText.text = "You Lose!"; 
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Tornado:
+                    case Card.CardType.Tornado:
                         resultText.text = "You Lose!"; 
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Fire:
+                    case Card.CardType.Fire:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Vines:
+                    case Card.CardType.Vines:
                         resultText.text = "You Lose!"; 
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Vinus:
+                    case Card.CardType.Vinus:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Tsunami:
+                    case Card.CardType.Tsunami:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Pheonix:
+                    case Card.CardType.Pheonix:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.IceShards:
+                    case Card.CardType.IceShards:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.MudSlide:
+                    case Card.CardType.MudSlide:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.WindGust:
+                    case Card.CardType.WindGust:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Meteor:
+                    case Card.CardType.Meteor:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
@@ -245,65 +232,65 @@ public class Manager : MonoBehaviour
                 AIChoice.sprite = Fire;
                 break;
 
-            case Choice.Wind:
+            case Card.CardType.Wind:
                 switch (myChoice)
                 {
-                    case Choice.Vines:
+                    case Card.CardType.Vines:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Vinus:
+                    case Card.CardType.Vinus:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Wind:
+                    case Card.CardType.Wind:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Fire:
+                    case Card.CardType.Fire:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Tornado:
+                    case Card.CardType.Tornado:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Rain:
+                    case Card.CardType.Rain:
                         resultText.text = "Draw"; 
                         break;
 
-                    case Choice.Storm:
+                    case Card.CardType.Storm:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Tsunami:
+                    case Card.CardType.Tsunami:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Pheonix:
+                    case Card.CardType.Pheonix:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.IceShards:
+                    case Card.CardType.IceShards:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.MudSlide:
+                    case Card.CardType.MudSlide:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.WindGust:
+                    case Card.CardType.WindGust:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Meteor:
+                    case Card.CardType.Meteor:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
@@ -312,67 +299,67 @@ public class Manager : MonoBehaviour
                 AIChoice.sprite = Wind;
                 break;
 
-            case Choice.Tornado:
+            case Card.CardType.Tornado:
                 switch (myChoice)
                 {
-                    case Choice.Storm:
+                    case Card.CardType.Storm:
                         resultText.text = "You Lose!"; 
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Tornado:
+                    case Card.CardType.Tornado:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Fire:
+                    case Card.CardType.Fire:
                         resultText.text = "You Lose!"; 
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Wind:
+                    case Card.CardType.Wind:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Rain:
+                    case Card.CardType.Rain:
                         resultText.text = "You Lose!"; 
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Vinus:
+                    case Card.CardType.Vinus:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Vines:
+                    case Card.CardType.Vines:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Tsunami:
+                    case Card.CardType.Tsunami:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Pheonix:
+                    case Card.CardType.Pheonix:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.IceShards:
+                    case Card.CardType.IceShards:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.MudSlide:
+                    case Card.CardType.MudSlide:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.WindGust:
+                    case Card.CardType.WindGust:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Meteor:
+                    case Card.CardType.Meteor:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
@@ -380,67 +367,67 @@ public class Manager : MonoBehaviour
                 AIChoice.sprite = Tornado;
                 break;
 
-            case Choice.Vinus:
+            case Card.CardType.Vinus:
                 switch (myChoice)
                 {
-                    case Choice.Storm:
+                    case Card.CardType.Storm:
                         resultText.text = "You Lose!"; 
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Tornado:
+                    case Card.CardType.Tornado:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Fire:
+                    case Card.CardType.Fire:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Wind:
+                    case Card.CardType.Wind:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Rain:
+                    case Card.CardType.Rain:
                         resultText.text = "You Lose!"; 
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Vinus:
+                    case Card.CardType.Vinus:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Vines:
+                    case Card.CardType.Vines:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.Tsunami:
+                    case Card.CardType.Tsunami:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Pheonix:
+                    case Card.CardType.Pheonix:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.IceShards:
+                    case Card.CardType.IceShards:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.MudSlide:
+                    case Card.CardType.MudSlide:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.WindGust:
+                    case Card.CardType.WindGust:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Meteor:
+                    case Card.CardType.Meteor:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
@@ -448,133 +435,133 @@ public class Manager : MonoBehaviour
                 AIChoice.sprite = Vinus;
                 break;
 
-            case Choice.Meteor:
+            case Card.CardType.Meteor:
                 switch (myChoice)
                 {
-                    case Choice.Fire:
+                    case Card.CardType.Fire:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Tsunami:
+                    case Card.CardType.Tsunami:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Vinus:
+                    case Card.CardType.Vinus:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Tornado:
+                    case Card.CardType.Tornado:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Wind:
+                    case Card.CardType.Wind:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Storm:
+                    case Card.CardType.Storm:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Rain:
+                    case Card.CardType.Rain:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Pheonix:
+                    case Card.CardType.Pheonix:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.IceShards:
+                    case Card.CardType.IceShards:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Vines:
+                    case Card.CardType.Vines:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.MudSlide:
+                    case Card.CardType.MudSlide:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.WindGust:
+                    case Card.CardType.WindGust:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Meteor:
+                    case Card.CardType.Meteor:
                         resultText.text = "Draw";
                         break;
                 }
                 AIChoice.sprite = Meteor;
                 break;
 
-            case Choice.WindGust:
+            case Card.CardType.WindGust:
                 switch (myChoice)
                 {
-                    case Choice.Fire:
+                    case Card.CardType.Fire:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Tsunami:
+                    case Card.CardType.Tsunami:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Vinus:
+                    case Card.CardType.Vinus:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Tornado:
+                    case Card.CardType.Tornado:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Wind:
+                    case Card.CardType.Wind:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Storm:
+                    case Card.CardType.Storm:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Rain:
+                    case Card.CardType.Rain:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Pheonix:
+                    case Card.CardType.Pheonix:
                         resultText.text = "Draw!";
                         break;
 
-                    case Choice.IceShards:
+                    case Card.CardType.IceShards:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Vines:
+                    case Card.CardType.Vines:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.MudSlide:
+                    case Card.CardType.MudSlide:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.WindGust:
+                    case Card.CardType.WindGust:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Meteor:
+                    case Card.CardType.Meteor:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
@@ -582,67 +569,67 @@ public class Manager : MonoBehaviour
                 AIChoice.sprite = WindGust;
                 break;
 
-            case Choice.MudSlide:
+            case Card.CardType.MudSlide:
                 switch (myChoice)
                 {
-                    case Choice.Fire:
+                    case Card.CardType.Fire:
                         resultText.text = "You lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Tsunami:
+                    case Card.CardType.Tsunami:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Vinus:
+                    case Card.CardType.Vinus:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Tornado:
+                    case Card.CardType.Tornado:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Wind:
+                    case Card.CardType.Wind:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Storm:
+                    case Card.CardType.Storm:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Rain:
+                    case Card.CardType.Rain:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Pheonix:
+                    case Card.CardType.Pheonix:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.IceShards:
+                    case Card.CardType.IceShards:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Vines:
+                    case Card.CardType.Vines:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.MudSlide:
+                    case Card.CardType.MudSlide:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.WindGust:
+                    case Card.CardType.WindGust:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Meteor:
+                    case Card.CardType.Meteor:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
@@ -650,66 +637,66 @@ public class Manager : MonoBehaviour
                 AIChoice.sprite = MudSlide;
                 break;
 
-            case Choice.IceShards:
+            case Card.CardType.IceShards:
                 switch (myChoice)
                 {
-                    case Choice.Fire:
+                    case Card.CardType.Fire:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Tsunami:
+                    case Card.CardType.Tsunami:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Vinus:
+                    case Card.CardType.Vinus:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Tornado:
+                    case Card.CardType.Tornado:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Wind:
+                    case Card.CardType.Wind:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Storm:
+                    case Card.CardType.Storm:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Rain:
+                    case Card.CardType.Rain:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Pheonix:
+                    case Card.CardType.Pheonix:
                         resultText.text = "You Lose!";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.IceShards:
+                    case Card.CardType.IceShards:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Vines:
+                    case Card.CardType.Vines:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.MudSlide:
+                    case Card.CardType.MudSlide:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.WindGust:
+                    case Card.CardType.WindGust:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Meteor:
+                    case Card.CardType.Meteor:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
@@ -717,198 +704,198 @@ public class Manager : MonoBehaviour
                 AIChoice.sprite = IceShards;
                 break;
 
-            case Choice.Pheonix:
+            case Card.CardType.Pheonix:
                 switch (myChoice)
                 {
-                    case Choice.Fire:
+                    case Card.CardType.Fire:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Tsunami:
+                    case Card.CardType.Tsunami:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Vinus:
+                    case Card.CardType.Vinus:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Tornado:
+                    case Card.CardType.Tornado:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Wind:
+                    case Card.CardType.Wind:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Storm:
+                    case Card.CardType.Storm:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Rain:
+                    case Card.CardType.Rain:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Pheonix:
+                    case Card.CardType.Pheonix:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.IceShards:
+                    case Card.CardType.IceShards:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Vines:
+                    case Card.CardType.Vines:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.MudSlide:
+                    case Card.CardType.MudSlide:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.WindGust:
+                    case Card.CardType.WindGust:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Meteor:
+                    case Card.CardType.Meteor:
                         resultText.text = "Draw";
                         break;
                 }
                 AIChoice.sprite = Pheonix;
                 break;
 
-            case Choice.Storm:
+            case Card.CardType.Storm:
                 switch (myChoice)
                 {
-                    case Choice.Fire:
+                    case Card.CardType.Fire:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Tsunami:
+                    case Card.CardType.Tsunami:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Vinus:
+                    case Card.CardType.Vinus:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Tornado:
+                    case Card.CardType.Tornado:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Wind:
+                    case Card.CardType.Wind:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Storm:
+                    case Card.CardType.Storm:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Rain:
+                    case Card.CardType.Rain:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Pheonix:
+                    case Card.CardType.Pheonix:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.IceShards:
+                    case Card.CardType.IceShards:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Vines:
+                    case Card.CardType.Vines:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.MudSlide:
+                    case Card.CardType.MudSlide:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.WindGust:
+                    case Card.CardType.WindGust:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Meteor:
+                    case Card.CardType.Meteor:
                         resultText.text = "Draw";
                         break;
                 }
                 AIChoice.sprite = Storm;
                 break;
 
-            case Choice.Tsunami:
+            case Card.CardType.Tsunami:
                 switch (myChoice)
                 {
-                    case Choice.Fire:
+                    case Card.CardType.Fire:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Tsunami:
+                    case Card.CardType.Tsunami:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Vinus:
+                    case Card.CardType.Vinus:
                         resultText.text = "You Win!";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Tornado:
+                    case Card.CardType.Tornado:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.Wind:
+                    case Card.CardType.Wind:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Storm:
+                    case Card.CardType.Storm:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Rain:
+                    case Card.CardType.Rain:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.Pheonix:
+                    case Card.CardType.Pheonix:
                         resultText.text = "Draw";
                         break;
 
-                    case Choice.IceShards:
+                    case Card.CardType.IceShards:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Vines:
+                    case Card.CardType.Vines:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.MudSlide:
+                    case Card.CardType.MudSlide:
                         resultText.text = "You Lose";
                         FindFirstObjectByType<win>().opponentpoints++;
                         break;
 
-                    case Choice.WindGust:
+                    case Card.CardType.WindGust:
                         resultText.text = "You Win";
                         FindFirstObjectByType<win>().playerpoints++;
                         break;
 
-                    case Choice.Meteor:
+                    case Card.CardType.Meteor:
                         resultText.text = "Draw";
                         break;
                 }
@@ -916,4 +903,5 @@ public class Manager : MonoBehaviour
                 break;
         }
     }
+  
 }

@@ -179,8 +179,8 @@ MonoBehaviour:
   m_text: "artist\nAlexa Volosevich:lead artist,  \n\n\n\n\n\n\n\nbryn:charicter
     artist, backround artist\n\n\n\n\n\n\n\nchanelle:backround artist,ui artist"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a3bebb2f3bf9a640852946fa438e6bf, type: 2}
+  m_sharedMaterial: {fileID: 4186584396999623731, guid: 8a3bebb2f3bf9a640852946fa438e6bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -617,8 +617,8 @@ MonoBehaviour:
 
     warren: mapmaker, animaton programer'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a3bebb2f3bf9a640852946fa438e6bf, type: 2}
+  m_sharedMaterial: {fileID: 4186584396999623731, guid: 8a3bebb2f3bf9a640852946fa438e6bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

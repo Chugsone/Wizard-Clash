@@ -1361,6 +1361,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3199577f76aa51840ab6133c7b52be14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnDrag:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &840155050
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,8 +2386,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Result
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8a3bebb2f3bf9a640852946fa438e6bf, type: 2}
+  m_sharedMaterial: {fileID: 4186584396999623731, guid: 8a3bebb2f3bf9a640852946fa438e6bf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2478,7 +2481,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: 4186584396999623731, guid: 8a3bebb2f3bf9a640852946fa438e6bf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

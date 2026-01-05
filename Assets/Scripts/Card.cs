@@ -10,7 +10,7 @@ namespace CardGame
     {
         public string cardName;
 
-        public List<CardType> cardType;
+        public CardType cardType;
 
         public Sprite cardSprite;
 

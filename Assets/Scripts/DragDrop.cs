@@ -1,12 +1,15 @@
+using CardGame;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public static DragDrop currentDraggedItem;
+    public static UnityEvent<Card.CardType> onDragEvent;
 
     public Transform parentAfterDrag;
     private Vector2 originalPosition;
@@ -38,6 +41,7 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         this.transform.SetParent(parentAfterDrag);
         currentDraggedItem = null; 
         GetComponentInChildren<Image>().raycastTarget = true;
+        onDragEvent?.Invoke(GetComponent<CardDisplay>().cardData.cardType);
     }
 
 
