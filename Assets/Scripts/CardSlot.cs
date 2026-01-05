@@ -1,4 +1,5 @@
 using CardGame;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -10,6 +11,7 @@ public class CardSlot : MonoBehaviour, IPointerEnterHandler
     public UnityEvent<Card.CardType> OnDrag;
 
     public int Limit = 1;
+    public List<GameObject> cardsInSlot = new List<GameObject>();
 
     public void OnPointerEnter(PointerEventData eventData)
     {

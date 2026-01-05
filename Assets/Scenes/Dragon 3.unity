@@ -1127,7 +1127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5498977512680561311, guid: 3673301b10f39964fa9012359ea746ad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 248
+      value: 342
       objectReference: {fileID: 0}
     - target: {fileID: 5498977512680561311, guid: 3673301b10f39964fa9012359ea746ad, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1229,6 +1229,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  Limit: 1
+  cardsInSlot: []
 --- !u!1 &840155050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,7 +1711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resultText: {fileID: 1916131417}
   AIChoice: {fileID: 2111496301}
-  Choices: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c000000
+  Choices: 0000000001000000020000000300000005000000060000000700000008000000090000000a0000000b0000000c000000
   Fire: {fileID: -6804801868860867171, guid: 8c02fa3a43f23f344bf4179a4960000b, type: 3}
   Tsunami: {fileID: 1115103745373846433, guid: 101695f8ed8551948ab1c29a69113ff7, type: 3}
   Vinus: {fileID: 4529641765451606500, guid: 2d78ef0127260e44e8795c8b68a4eb0c, type: 3}
@@ -2559,7 +2561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -137.29, y: 151}
+  m_AnchoredPosition: {x: -237.29, y: 138.58}
   m_SizeDelta: {x: 362.266, y: 326.8439}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807

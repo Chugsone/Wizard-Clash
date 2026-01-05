@@ -38,6 +38,17 @@ public class DragDrop : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     public void OnEndDrag(PointerEventData eventData)
     {
         Debug.Log("OnEndDrag");
+
+        if (parentAfterDrag.TryGetComponent(out CardSlot slot))
+        {
+            if(slot.cardsInSlot.Count >= slot.Limit)
+            {
+                Destroy(slot.cardsInSlot[0]);
+                slot.cardsInSlot.RemoveAt(0);
+            }
+            slot.cardsInSlot.Add(this.gameObject);
+        }
+
         this.transform.SetParent(parentAfterDrag);
         currentDraggedItem = null; 
         GetComponentInChildren<Image>().raycastTarget = true;
