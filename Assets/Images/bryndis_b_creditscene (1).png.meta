@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bryndis_b_creditscene (1)_0: -1604544977933691281
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
