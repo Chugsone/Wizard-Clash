@@ -37,6 +37,11 @@ public class MainMenu : MonoBehaviour
     public void OnCreditsClick()
     {
         SceneManager.LoadScene("Credits");
+
     }
-     
+    public void OnexitClick()
+    {
+        SceneManager.LoadScene("after");
+
     }
+}
