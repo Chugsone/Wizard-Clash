@@ -22,6 +22,8 @@ public class win : MonoBehaviour
         {
             Debug.Log("You Win!");
             resultText.SetText(WinText);
+
+            FindFirstObjectByType<winorlosetoafter>().OnFinish("after");
         }
         if (opponentpoints >= winningPoints)
         {

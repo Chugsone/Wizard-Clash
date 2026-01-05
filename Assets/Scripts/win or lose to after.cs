@@ -6,17 +6,17 @@ using UnityEngine.UI;
 
 public class winorlosetoafter : MonoBehaviour
 {
-    [SerializeField] private string afterSceneName;
     [SerializeField] private int waitTime = 5;
 
-    public void OnFinish()
+    public void OnFinish(string afterSceneName)
     {
-        StartCoroutine(WaitForSeconds());
-        SceneManager.LoadScene(afterSceneName);
+        StartCoroutine(WaitForSeconds(afterSceneName));
     }
 
-    IEnumerator WaitForSeconds()
+    IEnumerator WaitForSeconds(string afterSceneName)
     {
         yield return new WaitForSeconds(waitTime);
+        SceneManager.LoadScene(afterSceneName);
+
     }
 }
