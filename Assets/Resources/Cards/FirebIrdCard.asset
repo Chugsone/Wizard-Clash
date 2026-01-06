@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: FirebIrdCard
   m_EditorClassIdentifier: 
   cardName: Pheonix
-  cardType: 07000000
+  cardType: 7
   cardSprite: {fileID: -6660019825636878508, guid: 3464ddc34052d9b419519b1134011999, type: 3}
