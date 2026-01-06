@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: TsunamiCard
   m_EditorClassIdentifier: 
   cardName: Tsunami
-  cardType: 01000000
+  cardType: 1
   cardSprite: {fileID: 1115103745373846433, guid: 101695f8ed8551948ab1c29a69113ff7, type: 3}

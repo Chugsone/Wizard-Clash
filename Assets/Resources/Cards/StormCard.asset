@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: StormCard
   m_EditorClassIdentifier: 
   cardName: Lightning
-  cardType: 05000000
+  cardType: 5
   cardSprite: {fileID: -7255364898128885475, guid: 0c1d4bf40c59aa34a82bf2fdf9d5407d, type: 3}

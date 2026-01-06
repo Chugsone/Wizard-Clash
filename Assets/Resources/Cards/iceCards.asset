@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: iceCards
   m_EditorClassIdentifier: 
   cardName: IceShards
-  cardType: 08000000
+  cardType: 8
   cardSprite: {fileID: 5828124777115410962, guid: 7268a93083d74c04e9b902f3496debdc, type: 3}

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: EarthCard
   m_EditorClassIdentifier: 
   cardName: Vinus FlyTrap
-  cardType: 02000000
+  cardType: 2
   cardSprite: {fileID: 4529641765451606500, guid: 2d78ef0127260e44e8795c8b68a4eb0c, type: 3}
